@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">NicNiuh2022</string>
+
+    <!-- Login -->
+    <string name="edt_nombre_usuario">Nombre de Usuario</string>
+    <string name="edt_contrasenha">Contraseña</string>
+    <string name="btn_ingresar">Ingresar</string>
+    <string name="btn_registro">¿Todavía no te registras?</string>
+    <string name="err_nombre_usuario">Falta Nombre de Usuario</string>
+    <string name="err_contrasenha">Falta Contraseña</string>
+
+    <!--Registro -->
+    <string name="edt_correo">Correo Electrónico</string>
+    <string name="edt_telefono">Teléfono</string>
+    <string name="edt_confirmar_contrasenha">Confirmar Contraseña</string>
+    <string name="btn_registrar">Registrar</string>
+    <string name="btn_ingreso">¿Ya tienes una cuenta?</string>
+</resources>
