@@ -2,6 +2,7 @@ package com.unam.unica.adonahi.nicniuh2022;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
@@ -25,7 +26,7 @@ public class RegistroActivity extends AppCompatActivity {
         correoP = Patterns.EMAIL_ADDRESS;
 
         edtNombreUsuario = findViewById(R.id.edt_nombre_usuario_registro);
-        edtCorreo = findViewById(R.id.edt_correo);
+        edtCorreo = findViewById(R.id.edtCorreo);
         edtTelefono = findViewById(R.id.edt_telefono);
         edtContrasenha = findViewById(R.id.edt_contrasenha_registro);
         edtConfirmarContrasenha = findViewById(R.id.edt_confirmar_contrasenha);
@@ -45,11 +46,35 @@ public class RegistroActivity extends AppCompatActivity {
                     edtNombreUsuario.setError(getString(R.string.err_nombre_usuario));
                 }
                 else if(correo.length() == 0){
-                    edtCorreo.setError("Falta Correo");
+                    edtCorreo.setError(getString(R.string.err_correo));
                 }
                 else if(!correoP.matcher(correo).matches()){
-                    edtCorreo.setError("No es un correo");
+                    edtCorreo.setError(getString(R.string.err_correo_no_valido));
                 }
+                else if(telefono.length() == 0){
+                    edtTelefono.setError(getString(R.string.err_telefono));
+                }
+                else if(contrasenha.length() == 0){
+                    edtContrasenha.setError(getString(R.string.err_contrasenha));
+                }
+                else if(confirmarContrasenha.length() == 0){
+                    edtConfirmarContrasenha.setError(getString(R.string.err_contrasenha));
+                }
+                else if(!contrasenha.equals(confirmarContrasenha)){
+                    edtContrasenha.setError(getString(R.string.err_confirmar_contrasenha));
+                    edtConfirmarContrasenha.setError(getString(R.string.err_confirmar_contrasenha));
+                }
+                else{
+                    Intent inicio = new Intent(RegistroActivity.this, InicioActivity.class);
+                    startActivity(inicio);
+                }
+            }
+        });
+
+        btnIngreso.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
             }
         });
 

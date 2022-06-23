@@ -37,6 +37,10 @@ public class MainActivity extends AppCompatActivity {
                 else if(contrasenha.length() == 0){
                     edtContrasenha.setError(getString(R.string.err_contrasenha));
                 }
+                else{
+                    Intent inicio = new Intent(MainActivity.this, InicioActivity.class);
+                    startActivity(inicio);
+                }
             }
         });
 

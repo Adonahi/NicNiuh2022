@@ -3,8 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Adonahi/Documents/AndroidProjects/NicNiuh2022/app/src/main/res/layout/activity_inicio.xml" value="0.25" />
         <entry key="..\:/Users/Adonahi/Documents/AndroidProjects/NicNiuh2022/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/Adonahi/Documents/AndroidProjects/NicNiuh2022/app/src/main/res/layout/activity_registro.xml" value="0.33" />
+        <entry key="..\:/Users/Adonahi/Documents/AndroidProjects/NicNiuh2022/app/src/main/res/layout/app_bar_inicio.xml" value="0.17083333333333334" />
+        <entry key="..\:/Users/Adonahi/Documents/AndroidProjects/NicNiuh2022/app/src/main/res/layout/content_inicio.xml" value="0.17083333333333334" />
+        <entry key="..\:/Users/Adonahi/Documents/AndroidProjects/NicNiuh2022/app/src/main/res/layout/nav_header_inicio.xml" value="0.17083333333333334" />
+        <entry key="..\:/Users/Adonahi/Documents/AndroidProjects/NicNiuh2022/app/src/main/res/menu/activity_main_drawer.xml" value="0.67" />
+        <entry key="..\:/Users/Adonahi/Documents/AndroidProjects/NicNiuh2022/app/src/main/res/menu/inicio.xml" value="0.17083333333333334" />
       </map>
     </option>
   </component>
