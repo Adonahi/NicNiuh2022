@@ -10,4 +10,14 @@
         android:name="com.unam.unica.adonahi.nicniuh2022.PrincipalFragment"
         android:label="Principal"
         tools:layout="@layout/fragment_principal" />
+    <fragment
+        android:id="@+id/serviciosFragment"
+        android:name="com.unam.unica.adonahi.nicniuh2022.ServiciosFragment"
+        android:label="Servicios"
+        tools:layout="@layout/fragment_servicios" />
+    <fragment
+        android:id="@+id/contactoFragment"
+        android:name="com.unam.unica.adonahi.nicniuh2022.ContactoFragment"
+        android:label="Contacto"
+        tools:layout="@layout/fragment_contacto" />
 </navigation>
